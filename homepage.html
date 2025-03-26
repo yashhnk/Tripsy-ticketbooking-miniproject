@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripsy - Book Your Journey</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="tripsy_logo">
+        <div class="logo"><a href="homepage.html"> Tripsy </a></div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Search</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><button id ="logout-btn"> Logout </button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-section">
+        <h1>Book Your Journey Now</h1>
+
+        <div id="flights" class="search-box">
+            <div class="search-container">
+                <input type="text" id="flight-from" placeholder="From" class="large-input">
+                <input type="text" id="flight-to" placeholder="To" class="large-input">
+                <input type="date" id="flight-date" class="large-input">
+                <button class="search-btn" onclick="searchTransport('flight')">Search Flights</button>
+            </div>
+        </div>
+
+        <div id="trains" class="search-box">
+            <div class="search-container">
+                <input type="text" id="train-from" placeholder="From" class="large-input">
+                <input type="text" id="train-to" placeholder="To" class="large-input">
+                <input type="date" id="train-date" class="large-input">
+                <button class="search-btn" onclick="searchTransport('train')">Search Trains</button>
+            </div>
+        </div>
+
+        <div id="buses" class="search-box">
+            <div class="search-container">
+                <input type="text" id="bus-from" placeholder="From" class="large-input">
+                <input type="text" id="bus-to" placeholder="To" class="large-input">
+                <input type="date" id="bus-date" class="large-input">
+                <button class="search-btn" onclick="searchTransport('bus')">Search Buses</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinations">
+            <div class="destination">
+                <img src="paris.png" alt="Paris">
+                <div class="destination-overlay">
+                    <h3>Paris</h3>
+                    <p>The City of Lights</p>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="newyork.png" alt="New York">
+                <div class="destination-overlay">
+                    <h3>New York</h3>
+                    <p>The Big Apple</p>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="dubai.png" alt="Dubai">
+                <div class="destination-overlay">
+                    <h3>Dubai</h3>
+                    <p>City of Gold</p>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="tokyo.png" alt="Tokyo">
+                <div class="destination-overlay">
+                    <h3>Tokyo</h3>
+                    <p>Metropolis of the Future</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers">
+        <h2>Special Offers</h2>
+        <div class="offers-slider-container">
+            <div class="offers-track">
+                <div class="offer-card">
+                    <div class="offer-icon">🎉</div>
+                    <div class="offer-content">
+                        <h3>50% Off on First Booking</h3>
+                        <div class="coupon-box">
+                            <span class="coupon-code">WELC50</span>
+                            <button class="copy-btn" onclick="copyCoupon('WELCOME50')">Copy Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">✈</div>
+                    <div class="offer-content">
+                        <h3>₹1000 Off on Flights</h3>
+                        <div class="coupon-box">
+                            <span class="coupon-code">INTL1000</span>
+                            <button class="copy-btn" onclick="copyCoupon('INTL1000')">Copy Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">🎉</div>
+                    <div class="offer-content">
+                        <h3>30% Off on Bus Tickets</h3>
+                        <div class="coupon-box">
+                            <span class="coupon-code">BUS30</span>
+                            <button class="copy-btn" onclick="copyCoupon('HOTEL30')">Copy Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">🚆</div>
+                    <div class="offer-content">
+                        <h3>15% Off Train Tickets</h3>
+                        <div class="coupon-box">
+                            <span class="coupon-code">TRAIN15</span>
+                            <button class="copy-btn" onclick="copyCoupon('TRAIN15')">Copy Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">🎉</div>
+                    <div class="offer-content">
+                        <h3>50% Off on First Booking</h3>
+                        <div class="coupon-box">
+                            <span class="coupon-code">WELCOME50</span>
+                            <button class="copy-btn" onclick="copyCoupon('WELCOME50')">Copy Code</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">✈</div>
+                    <div class="offer-content">
+                        <h3>₹1000 Off on International Flights</h3>
+                        <div class="coupon-box">
+                            <span class="coupon-code">INTL1000</span>
+                            <button class="copy-btn" onclick="copyCoupon('INTL1000')">Copy Code</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="testimonial-section"></div>
+    <footer>
+        <p>&copy; 2025 Tripsy</p>
+    </footer>
+
+    <script src="homepage.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="testimonials.jsx"></script>
+</body>
+</html>

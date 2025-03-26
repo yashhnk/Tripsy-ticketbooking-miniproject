@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Complete Your Payment</h2>
+        <p>Confirm your details before proceeding with the payment!</p>
+
+        <div class="booking-summary">
+            <div class="detail"><strong>Type:</strong> <span id="transport-type">Loading...</span></div>
+            <div class="detail"><strong>Departure:</strong> <span id="from">Loading...</span></div>
+            <div class="detail"><strong>Destination:</strong> <span id="to">Loading...</span></div>
+            <div class="detail"><strong>Date:</strong> <span id="date">Loading...</span></div>
+            <div class="detail"><strong>Time:</strong> <span id="time">Loading...</span></div>
+            <div class="detail"><strong>Seat Number:</strong> <span id="seatNumber">Loading...</span></div>
+            <div class="detail"><strong>Price:</strong> <span id="price">Loading...</span></div>
+            <div class="detail"><strong>Meals:</strong> <span id="meals">Loading...</span></div>
+            <div class="detail"><strong>Booking ID:</strong> <span id="bookingID">Loading...</span></div>
+        </div>
+
+        <div class="payment-method">
+            <h3>Select Payment Method</h3>
+            <div class="payment-options">
+                <button class="pay-btn" data-method="Credit Card">Credit/Debit</button>
+                <button class="pay-btn" data-method="UPI">UPI</button>
+                <button class="pay-btn" data-method="Net Banking">Net Banking</button>
+            </div>
+        </div>
+
+        <button id="pay-now">Pay ₹0</button>
+
+        <div id="confirmation" class="hidden">
+            <p>✅ Payment Confirmed! Redirecting...</p>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

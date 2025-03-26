@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - Tripsy</title>
+    <link rel="stylesheet" href="booking-confirmation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="confirmation-box">
+            <h1>Booking Confirmed 🎉</h1>
+            <p>Your trip has been successfully booked! Below are your details:</p>
+
+            <div class="booking-details">
+                <p><strong>Departure:</strong> <span id="departure"></span></p>
+                <p><strong>Destination:</strong> <span id="destination"></span></p>
+                <p><strong>Date:</strong> <span id="date"></span></p>
+                <p><strong>Time:</strong> <span id="time"></span></p>
+                <p><strong>Seat Number:</strong> <span id="seatNumber"></span></p>
+                <p><strong>Price:</strong> <span id="price">₹4500</span></p>
+                <p><strong>Meals:</strong> <span id="meals"></span></p>
+                <p class="reference"><strong>Booking ID:</strong> <span id="bookingID"></span></p>
+            </div>
+
+            <div class="buttons">
+                <button class="download-btn" onclick="downloadTicket()">Download Ticket</button>
+                <button class="home-btn" onclick="goToHome()">Go to Home</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="booking-confirmation.js"></script>
+</body>
+</html>

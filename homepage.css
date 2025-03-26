@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #CBD3F9;
+}
+header {
+    background-color: #ffffff;
+    color: #19255A;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+header div a {
+    text-decoration: none;  
+}
+header div a:visited {
+    color:#081673;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: -1070px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #19255A;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.booking-section {
+    background: #E1E5FA;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+.booking-section h1 {
+    font-family: 'Gloock', sans-serif;
+    color: #081673;
+    font-size: 30px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.large-input {
+    padding: 15px;
+    width: 220px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.large-input:focus {
+    border-color: #081673;
+    box-shadow: 0px 0px 5px rgba(8, 22, 115, 0.5);
+}
+
+.search-btn {
+    padding: 15px 30px;
+    background: #19255A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-btn:hover {
+    background: #081673;
+    transform: scale(1.05);
+}
+.popular-destinations {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 20px;
+    border-radius: 15px;
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.popular-destinations h2 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Gloock', sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.destinations {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px;
+    scrollbar-width: none;
+}
+
+.destinations::-webkit-scrollbar {
+    display: none;
+}
+
+.destination {
+    position: relative;
+    min-width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.destination:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.destination img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination:hover img {
+    transform: scale(1.1);
+}
+
+.destination-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 20px;
+}
+
+.destination-overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.destination-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.offers {
+    background: linear-gradient(135deg, #2d9ccb 0%, #124bc6 100%);
+    padding: 40px 20px;
+    border-radius: 15px;
+    width: 85%;
+    margin: 30px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.offers h2 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Gloock', sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.offers-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.offers-track {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    will-change: transform;
+}
+
+.offer-card {
+    background: white;
+    border-radius: 15px;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 60px 0;
+    border-color: transparent #ff9a9e transparent transparent;
+}
+
+.offer-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.offer-content h3 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.coupon-box {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: 1px dashed #081673;
+}
+
+.coupon-code {
+    font-size: 1rem;
+    color: #081673;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.copy-btn {
+    background: #081673;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #19255A;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+#logout-btn {
+    border-radius: 10px;
+    padding: 7px 10px;
+    border: none;
+    color: white;
+    background-color: #19255A;
+    margin-top: -7px;
+}
+.testimonial-container {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 60%;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #414141;
+}
+.testimonial-container h2 {
+    font-family: 'Gloock' , sans-serif;
+    margin-bottom: 5px;
+}
+.testimonial h3 {
+    color: #081673;
+    margin: 10px 0 5px;
+}
+
+.testimonial span {
+    font-size: 20px;
+    color: #ffc107;
+}
+
+.testimonial-buttons {
+    margin-top: 10px;
+}
+
+.testimonial-buttons button {
+    background: #081673;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.testimonial-buttons button:hover {
+    background: #7f92e9;
+}
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

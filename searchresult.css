@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #CBD3F9;
+    color: #19255A;
+}
+header {
+    background-color: #ffffff;
+    color: #19255A;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+header .logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #19255A;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #19255A;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #081673;
+}
+.search-results-section {
+    background: #E1E5FA;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+#search-summary {
+    font-size: 24px;
+    color: #19255A;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Gloock', sans-serif;
+}
+#flight-results, #train-results, #bus-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.flight-card, .bus-card, .train-card{
+    background: #fff;
+    border: 2px solid #19255A;
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.flight-card:hover, .bus-card:hover, .train-card:hover {
+    transform: scale(1.05);
+}
+
+.flight-card p, .train-card p, .bus-card p{
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.flight-card p strong, .bus-card p strong, .train-card p strong{
+    font-size: 18px;
+    font-family: 'Gloock', sans-serif;
+    color: #081673;
+}
+.trains-card {
+    background: #fff;
+    border: 2px solid #19255A;
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.trains-card:hover {
+    transform: scale(1.05);
+}
+
+.trains-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.trains-card p strong {
+    font-size: 18px;
+    color: #081673;
+}
+button {
+    background-color: #87CEFA; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right; 
+    margin-top: 10px;
+    
+}
+button:hover {
+    background-color: #00BFFF; 
+}
+footer {
+    background: #19255A;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}

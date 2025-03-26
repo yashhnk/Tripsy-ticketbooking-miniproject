@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #CBD5F0; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.confirmation-box {
+    background: #e2e7ee;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #081673;
+    font-family: 'Gloock';
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #414141;
+    margin-bottom: 10px;
+}
+
+.booking-details {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.booking-details p {
+    font-size: 14px;
+    color: #333;
+    margin: 8px 0;
+}
+
+.reference {
+    font-weight: bold;
+    color: #081673;
+}
+
+.payment-confirmation {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.success-message {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.download-btn, .home-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.download-btn {
+    background: #081673;
+    color: #CCD9EC;
+}
+
+.home-btn {
+    background: #7f92e9;
+    color: #081673;
+}
