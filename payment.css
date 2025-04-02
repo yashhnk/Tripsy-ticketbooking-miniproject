@@ -39,34 +39,11 @@ h3 {
     text-align: left;
     margin-bottom: 20px;
 }
-
+.booking-summary span {
+    color: #414141;
+}
 .detail {
     margin: 5px 0;
-}
-
-.seat-selection {
-    margin: 20px 0;
-}
-
-.seat-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin: 10px auto;
-    max-width: 200px;
-}
-
-.seat {
-    background: #ddd;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.seat.selected {
-    background: #28a745;
-    color: white;
 }
 
 .payment-options {
@@ -82,21 +59,19 @@ h3 {
     border-radius: 5px;
     font-weight: 600;
     width: 120px;
-    transition: background 0.3s ease;
 }
-
 .pay-btn:hover {
     background: #5a75f2;
 }
 
 .pay-btn.selected {
-    background: #28a745 !important; 
-    color: white !important;
+    background: #28a745; 
+    color: white;
 }
 
 #pay-now {
-    background: #7f92e9;
-    color: #081673;
+    background: #28a745;
+    color: white;
     padding: 15px 15px;
     border: none;
     cursor: pointer;
